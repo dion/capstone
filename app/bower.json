@@ -1,0 +1,24 @@
+{
+  "name": "capstone",
+  "version": "0.0.0",
+  "authors": [
+    "Dion Yang <jellopops@gmail.com>"
+  ],
+  "description": "working tracking app",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.4",
+    "angularjs": "~1.4.4"
+  },
+  "devDependencies": {
+    "angular-animate": "~1.4.4",
+    "bootstrap": "~3.3.5"
+  }
+}

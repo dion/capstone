@@ -1,0 +1,1 @@
+angular.module('workr', ['ngAnimate', 'mgcrea.ngStrap']);
