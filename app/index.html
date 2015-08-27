@@ -5,28 +5,32 @@
 <link rel="stylesheet" type="text/css" href="./styles/main.css" />
 <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
 </head>
-<body>
+<body ng-controller="mainCtrl">
 	<div class="container"><!-- container //-->
 		<div class="col-md-7 item">
-			<div class="col-md-1">
-				btn
+			<div class="col-md-1 xoutline delete_column">
+				<button type="button" class="btn btn-default" aria-label="remove this exercise">
+				  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</button>
 			</div>
 
-			<div class="col-md-11">
-
+			<div class="col-md-11 xoutline item_main">
 				<!-- row1 //-->
 				<div class="row">
 					<div class="col-md-12">
-						<div class="col-md-1">
-							<input type="checkbox" ng-modal="completed(this)">
-
-						</div>
-						<div class="col-md-2">
-							<span>Pull Up</span>
+						<div class="col-md-3">
+							<ul class="inline-list">
+								<li>
+									<input type="checkbox" ng-modal="completed(this)">
+								</li>
+								<li>
+									<span>Pull Up</span>
+								</li>
+							</ul>
 						</div>
 						<div class="col-md-5"></div>
 
-						<div class="col-md-3">
+						<div class="col-md-4 text-right">
 							<input type="button" value="Instructions">
 						</div>
 					</div>
@@ -34,34 +38,32 @@
 				<!-- end of row1 //-->
 				<!-- row2 //-->
 				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-1"></div>
-						<div class="col-md-11">
-							<table>
-								<tr>
-									<th>Actual</th>
-									<th>Target</th>
-								</tr>
-								<tr>
-									<td>
-										<div class="col-md-3">
-											<input type="text" size="3"> 
-											sets,
-										</div>
-										<div class="col-md-3">
-											<input type="text" size="3"> reps,
-										</div>
-										<div class="col-md-3">
-											<input type="text" size="3"> lbs,
-										</div>
-									</td>
-									<td>
-										3 sets, 15 reps, 0 lbs
-									</td>
-								</tr>
-							</table>
-						</div>
+					<div class="col-md-12 pl-three-half">
+						<table>
+							<tr>
+								<th>Actual</th>
+								<th>Target</th>
+							</tr>
+							<tr>
+								<td>
+									<div class="col-md-3">
+										<input type="text" size="3" placeholder="5"> 
+										sets,
+									</div>
+									<div class="col-md-3">
+										<input type="text" size="3" placeholder="12"> reps,
+									</div>
+									<div class="col-md-3">
+										<input type="text" size="3" placeholder="0"> lbs,
+									</div>
+								</td>
+								<td>
+									3 sets, 15 reps, 0 lbs
+								</td>
+							</tr>
+						</table>
 					</div>
+					
 				</div>
 				<!-- end of row2 //-->
 			</div>

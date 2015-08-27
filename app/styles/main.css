@@ -1,4 +1,31 @@
 .item {
 	border:1px solid #808080;
 	padding:1em 0;
+	background-color:#C2E0FF;
+}
+
+.outline {
+	outline:1px solid red;
+}
+.delete_column {
+	margin-top:2.5em;
+	padding-right:15px;
+}
+.inline-list {
+	float:left;
+	margin:0;
+    padding:0;
+	list-style-type:none;
+}
+.inline-list li {
+	float:left;
+	padding-right:1em;
+}
+.pl-three-half {
+	padding-left:3.5em!important;
+}
+.item_main {
+	background-color:#fff;
+	padding:1em;
+	border:1px solid #ccc;
 }

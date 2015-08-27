@@ -1,0 +1,37 @@
+-table
+	workout_tpl
+		id, name, description, exercises
+	workout_tracker
+		id, workout_tpl, accomplished
+
+dion's workout
+this is THE workout of the moment
+{
+	[
+		name: 'deadlifts',
+		sets: 3,
+		rep: 12,
+		weight: 110.5
+	],
+	[
+		name: 'sqats',
+		sets: 3,
+		rep: 15,
+		weight: 120.5	
+	]
+}
+
+creation
+	---
+
+user 
+	load template
+	load their tracked stats
+
+
+
+-backend crud service
+	php crud thing (crud-admin-generator.com)
+
+-frontend
+	angularjs
